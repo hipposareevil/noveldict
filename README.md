@@ -4,6 +4,12 @@ Build a personal **KOReader / StarDict dictionary** from your EPUB library using
 
 Long-press any character name or fictional term while reading and get an instant description — without leaving your book.
 
+### Example in koreader on kindle
+
+![dictionary on koreader](docs/koread.jpg)
+
+### Local editor
+
 ![noveldict editor screenshot](docs/screenshot.png)
 
 ---
