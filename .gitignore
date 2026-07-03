@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Output / user data — don't commit your dictionary or logs
+noveldict_output/
+kobo_dict/
+*.log
+
+# macOS
+.DS_Store
+._*
+
+# Editor
+.vscode/
+.idea/

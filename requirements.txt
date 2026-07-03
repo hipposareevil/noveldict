@@ -1,0 +1,5 @@
+anthropic>=0.25.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+pyglossary>=5.0.0
+flask>=3.0.0
