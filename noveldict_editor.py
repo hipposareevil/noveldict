@@ -24,6 +24,7 @@ from pyglossary import Glossary
 
 DEFAULT_OUTPUT_DIR = Path.home() / "noveldict_output"
 DEFAULT_DICT_NAME  = "Novels"
+DEFAULT_HOST = "127.0.0.1"
 
 app = Flask(__name__)
 
@@ -545,6 +546,7 @@ def main():
     parser.add_argument("--output-dir", default=str(DEFAULT_OUTPUT_DIR))
     parser.add_argument("--dict-name",  default=DEFAULT_DICT_NAME)
     parser.add_argument("--port", type=int, default=5001)
+    parser.add_argument("--host", default=str(DEFAULT_HOST))
     args = parser.parse_args()
 
     OUTPUT_DIR  = Path(args.output_dir)
@@ -558,7 +560,7 @@ def main():
     print(f"   Dictionary: {MASTER_JSON}")
     print(f"   Output:     {OUTPUT_DIR / DICT_NAME}/")
     print(f"\n   Open http://localhost:{args.port} in your browser\n")
-    app.run(host="127.0.0.1", port=args.port, debug=False)
+    app.run(host=args.host, port=args.port, debug=False)
 
 
 if __name__ == "__main__":
